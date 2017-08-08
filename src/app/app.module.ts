@@ -8,11 +8,18 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { HighlightPage } from '../pages/highlight/highlight';
-import { TaobaoCollectionPage } from '../pages/taobao-collection/taobao-collection';
-import { ElectronicPage } from '../pages/electronic/electronic';
-import {FashionPage} from '../pages/fashion/fashion';
-import {HomeLivingPage} from '../pages/home-living/home-living';
+import { HighlightPage } from '../pages/home/child/highlight/highlight';
+import { TaobaoCollectionPage } from '../pages/home/child/taobao-collection/taobao-collection';
+import { ElectronicPage } from '../pages/home/child/electronic/electronic';
+import {FashionPage} from '../pages/home/child/fashion/fashion';
+import {HomeLivingPage} from '../pages/home/child/home-living/home-living';
+import {PetShopPage} from '../pages/home/child/pet-shop/pet-shop';
+import {HealthBeautyPage} from '../pages/home/child/health-beauty/health-beauty';
+import {BabyToysPage} from '../pages/home/child/baby-toys/baby-toys';
+import {SportTravelPage} from '../pages/home/child/sport-travel/sport-travel';
+import {MotorsPage} from '../pages/home/child/motors/motors';
+import {ShopByBrandsPage} from '../pages/home/child/shop-by-brands/shop-by-brands';
+import { SideMenuContentComponent } from '../pages/side-menu-content/side-menu-content.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +30,13 @@ import {HomeLivingPage} from '../pages/home-living/home-living';
     ElectronicPage,
     FashionPage,
     HomeLivingPage,
+    PetShopPage,
+    HealthBeautyPage,
+    BabyToysPage,
+    SportTravelPage,
+    MotorsPage,
+    ShopByBrandsPage,
+    SideMenuContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +52,12 @@ import {HomeLivingPage} from '../pages/home-living/home-living';
     ElectronicPage,
     FashionPage,
     HomeLivingPage,
+    PetShopPage,
+    HealthBeautyPage,
+    BabyToysPage,
+    SportTravelPage,
+    MotorsPage,
+    ShopByBrandsPage,
   ],
   providers: [
     StatusBar,

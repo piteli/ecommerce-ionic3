@@ -2,7 +2,7 @@
 <ion-header>
   <ion-navbar color="lazada-header">
     <ion-buttons start>
-    <button ion-button icon-only>
+    <button ion-button icon-only icon-left menuToggle>
     <ion-icon name="menu"></ion-icon>
     </button>
     </ion-buttons>
@@ -11,7 +11,7 @@
     </ion-title>
     <ion-buttons end>
     <button ion-button icon-only>
-  <ion-icon name="cart"></ion-icon>
+      <ion-icon name="cart"></ion-icon>
   </button>
     <button ion-button icon-only>
   <ion-icon name="more"></ion-icon>
@@ -19,45 +19,94 @@
 </ion-buttons>
   </ion-navbar>
   <ion-toolbar color="lazada-header">
-    <div class="div-input"><input class="input-style" placeholder="Search Lazada"></div>
+    <div class="div-input">
+      <button icon-only class="button-style">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <input class="input-style" placeholder="Search Lazada">
+    </div>
   </ion-toolbar>
-  <super-tabs toolbarBackground="lazada-header" toolbarColor="light" indicatorColor="light" badgeColor="light">
-  <super-tab [root]="page1" title="Highlights"></super-tab>
-  <super-tab [root]="page2" title="Taobao Collection"></super-tab>
-  <super-tab [root]="page3" title="Electronics"></super-tab>
-  <super-tab [root]="page4" title="Fashions"></super-tab>
-  <super-tab [root]="page5" title="Home & Living"></super-tab>
-</super-tabs>
 </ion-header>
 <!-- end ionic header  -->
 
 
-<!-- swipeable and scrollable tab navigator -->
-
-<!-- end ionic tab  -->
-
 
 
 <!-- ionic menu w/ header&body  -->
-<ion-menu type="overlay" [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-menu type="overlay" [content]="content" persistent=true>
   <ion-content>
     <ion-list>
       <button ion-item (click)="openPage(homePage)">
         Home
       </button>
       <button ion-item (click)="openPage(friendsPage)">
-        Friends
+        Mobile Top Up
       </button>
       <button ion-item (click)="openPage(eventsPage)">
-        Events
+        Mobiles & tablets
       </button>
       <button ion-item (click)="closeMenu()">
-        Close Menu
+        TV, Audio/Video, Gaming & Wearables
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Cameras
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Home Appliance
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Health & Beauty
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Fashion
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Bags abd Travel
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Sports & Outdoors
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Motors
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Media, Music, & Books
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Groceries
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Digital Goods
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Watches Sunglasses Jewellery
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Mother & Baby
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Toys & Games
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Pet Supplies
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Bedding & Bath
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Furniture & Decor
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Tools, Diy & Outdoor
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Laundy & Cleaning
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Kitchen & Dining
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Stationery & Craft
       </button>
     </ion-list>
   </ion-content>
@@ -66,11 +115,21 @@
 
 
 <!-- ionic body  -->
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+    <super-tabs toolbarBackground="lazada-header" toolbarColor="light" indicatorColor="light" badgeColor="light" scrollTabs=true>
+  <super-tab [root]="page1" title="Highlights"></super-tab>
+  <super-tab [root]="page2" title="Taobao Collection"></super-tab>
+  <super-tab [root]="page3" title="Electronics"></super-tab>
+  <super-tab [root]="page4" title="Fashions"></super-tab>
+  <super-tab [root]="page5" title="Home & Living"></super-tab>
+  <super-tab [root]="page6" title="Pet Shops"></super-tab>
+  <super-tab [root]="page7" title="Health & Beauty"></super-tab>
+  <super-tab [root]="page8" title="Baby & Toys"></super-tab>
+  <super-tab [root]="page9" title="Sport & Travels"></super-tab>
+  <super-tab [root]="page10" title="Motors"></super-tab>
+  <super-tab [root]="page11" title="Shop by Brands"></super-tab>
+
+</super-tabs>
 </ion-content>
 <!-- end ionic body  -->
 
