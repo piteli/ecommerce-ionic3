@@ -1,0 +1,88 @@
+<!--
+  Generated template for the MenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-menu type="overlay" [content]="content" persistent=true>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(homePage)">
+        Home
+      </button>
+      <button ion-item (click)="openPage(friendsPage)">
+        Mobile Top Up
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+        Mobiles & tablets
+      </button>
+      <button ion-item (click)="closeMenu()">
+        TV, Audio/Video, Gaming & Wearables
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Cameras
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Home Appliance
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Health & Beauty
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Fashion
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Bags abd Travel
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Sports & Outdoors
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Motors
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Media, Music, & Books
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Groceries
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Digital Goods
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Watches Sunglasses Jewellery
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Mother & Baby
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Toys & Games
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Pet Supplies
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Bedding & Bath
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Furniture & Decor
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Tools, Diy & Outdoor
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Laundy & Cleaning
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Kitchen & Dining
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Stationery & Craft
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ng-content></ng-content>
+
+<ion-nav id="nav" #content [root]="HomePage"></ion-nav>

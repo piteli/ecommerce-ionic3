@@ -20,6 +20,13 @@ import {SportTravelPage} from '../pages/home/child/sport-travel/sport-travel';
 import {MotorsPage} from '../pages/home/child/motors/motors';
 import {ShopByBrandsPage} from '../pages/home/child/shop-by-brands/shop-by-brands';
 import { SideMenuContentComponent } from '../pages/side-menu-content/side-menu-content.component';
+import { TabsPage } from '../pages/navigator/tabs/tabs';
+import { MenuPage } from '../pages/navigator/menu/menu';
+import { PopoverPage } from '../pages/components/popover/popover';
+import { AuthService } from '../providers/auth-service/auth-service';
+import { AuthIndexPage } from '../pages/authentication/auth-index/auth-index';
+import { LoginPage } from '../pages/authentication/login/login';
+import { RegisterPage } from '../pages/authentication/register/register';
 
 @NgModule({
   declarations: [
@@ -37,6 +44,13 @@ import { SideMenuContentComponent } from '../pages/side-menu-content/side-menu-c
     MotorsPage,
     ShopByBrandsPage,
     SideMenuContentComponent,
+    TabsPage,
+    MenuPage,
+    PopoverPage,
+    AuthIndexPage,
+    LoginPage,
+    RegisterPage,
+
   ],
   imports: [
     BrowserModule,
@@ -58,11 +72,18 @@ import { SideMenuContentComponent } from '../pages/side-menu-content/side-menu-c
     SportTravelPage,
     MotorsPage,
     ShopByBrandsPage,
+    TabsPage,
+    MenuPage,
+    PopoverPage,
+    AuthIndexPage,
+    LoginPage,
+    RegisterPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

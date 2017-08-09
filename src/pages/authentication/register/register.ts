@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Input } from '@angular/core';
 
 /**
- * Generated class for the HighlightPage page.
+ * Generated class for the RegisterPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -11,17 +10,16 @@ import { Input } from '@angular/core';
 
 @IonicPage()
 @Component({
-  selector: 'page-highlight',
-  templateUrl: 'highlight.html',
+  selector: 'page-register',
+  templateUrl: 'register.html',
 })
-export class HighlightPage {
+export class RegisterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HighlightPage');
+    console.log('ionViewDidLoad RegisterPage');
   }
-
 
 }

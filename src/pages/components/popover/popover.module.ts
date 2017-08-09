@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { HighlightPage } from './highlight';
-
+import { PopoverPage } from './popover';
 
 @NgModule({
   declarations: [
-    HighlightPage,
+    PopoverPage,
   ],
   imports: [
-    IonicPageModule.forChild(HighlightPage),
+    IonicPageModule.forChild(PopoverPage),
   ],
 })
-
-
-export class HighlightPageModule {}
+export class PopoverPageModule {}

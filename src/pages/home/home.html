@@ -1,4 +1,4 @@
-<!-- ionic header  -->
+<!-- home header  -->
 <ion-header>
   <ion-navbar color="lazada-header">
     <ion-buttons start>
@@ -13,7 +13,7 @@
     <button ion-button icon-only>
       <ion-icon name="cart"></ion-icon>
   </button>
-    <button ion-button icon-only>
+    <button ion-button icon-only (click)="presentPopover($event)">
   <ion-icon name="more"></ion-icon>
 </button>
 </ion-buttons>
@@ -27,110 +27,16 @@
     </div>
   </ion-toolbar>
 </ion-header>
-<!-- end ionic header  -->
-
-
-
+<!-- end home header  -->
 
 <!-- ionic menu w/ header&body  -->
-<ion-menu type="overlay" [content]="content" persistent=true>
-  <ion-content>
-    <ion-list>
-      <button ion-item (click)="openPage(homePage)">
-        Home
-      </button>
-      <button ion-item (click)="openPage(friendsPage)">
-        Mobile Top Up
-      </button>
-      <button ion-item (click)="openPage(eventsPage)">
-        Mobiles & tablets
-      </button>
-      <button ion-item (click)="closeMenu()">
-        TV, Audio/Video, Gaming & Wearables
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Cameras
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Home Appliance
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Health & Beauty
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Fashion
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Bags abd Travel
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Sports & Outdoors
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Motors
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Media, Music, & Books
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Groceries
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Digital Goods
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Watches Sunglasses Jewellery
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Mother & Baby
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Toys & Games
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Pet Supplies
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Bedding & Bath
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Furniture & Decor
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Tools, Diy & Outdoor
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Laundy & Cleaning
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Kitchen & Dining
-      </button>
-      <button ion-item (click)="closeMenu()">
-        Stationery & Craft
-      </button>
-    </ion-list>
-  </ion-content>
-</ion-menu>
+<page-menu>
+</page-menu>
 <!-- end ionic menu  -->
 
-
-<!-- ionic body  -->
+<!-- home body  -->
 <ion-content>
-    <super-tabs toolbarBackground="lazada-header" toolbarColor="light" indicatorColor="light" badgeColor="light" scrollTabs=true>
-  <super-tab [root]="page1" title="Highlights"></super-tab>
-  <super-tab [root]="page2" title="Taobao Collection"></super-tab>
-  <super-tab [root]="page3" title="Electronics"></super-tab>
-  <super-tab [root]="page4" title="Fashions"></super-tab>
-  <super-tab [root]="page5" title="Home & Living"></super-tab>
-  <super-tab [root]="page6" title="Pet Shops"></super-tab>
-  <super-tab [root]="page7" title="Health & Beauty"></super-tab>
-  <super-tab [root]="page8" title="Baby & Toys"></super-tab>
-  <super-tab [root]="page9" title="Sport & Travels"></super-tab>
-  <super-tab [root]="page10" title="Motors"></super-tab>
-  <super-tab [root]="page11" title="Shop by Brands"></super-tab>
-
-</super-tabs>
+<page-tabs>
+</page-tabs>
 </ion-content>
-<!-- end ionic body  -->
-
-<ion-nav id="nav" #content [root]="HomePage"></ion-nav>
+<!-- end home body  -->

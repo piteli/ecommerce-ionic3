@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { HighlightPage } from './highlight';
-
+import { TopupPage } from './topup';
 
 @NgModule({
   declarations: [
-    HighlightPage,
+    TopupPage,
   ],
   imports: [
-    IonicPageModule.forChild(HighlightPage),
+    IonicPageModule.forChild(TopupPage),
   ],
 })
-
-
-export class HighlightPageModule {}
+export class TopupPageModule {}

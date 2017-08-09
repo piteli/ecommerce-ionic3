@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { HighlightPage } from './highlight';
-
+import { AuthIndexPage } from './auth-index';
 
 @NgModule({
   declarations: [
-    HighlightPage,
+    AuthIndexPage,
   ],
   imports: [
-    IonicPageModule.forChild(HighlightPage),
+    IonicPageModule.forChild(AuthIndexPage),
   ],
 })
-
-
-export class HighlightPageModule {}
+export class AuthIndexPageModule {}
