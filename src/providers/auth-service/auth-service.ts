@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, HttpModule  } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 let apiUrl = 'http://localhost:8080/api/';

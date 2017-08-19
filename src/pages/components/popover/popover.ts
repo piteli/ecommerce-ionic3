@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthIndexPage } from '../../authentication/auth-index/auth-index';
 import { ViewController } from 'ionic-angular';
+import { NotificationsPage } from '../../notifications/notifications';
 
 /**
  * Generated class for the PopoverPage page.
@@ -27,6 +28,11 @@ export class PopoverPage {
 
   toAuthIndexPage(){
     this.navCtrl.push(AuthIndexPage);
+    this.viewCtrl.dismiss();
+  }
+
+  toNotiPage(){
+    this.navCtrl.push(NotificationsPage);
     this.viewCtrl.dismiss();
   }
 

@@ -1,21 +1,22 @@
 
 <ion-content padding>
   <ion-list>
-
+  <form (submit)="doLogin()">
     <ion-item>
       <ion-label floating>Username</ion-label>
-      <ion-input type="text" clearInput=true></ion-input>
+      <ion-input [(ngModel)]="loginData.username" type="text" name="username" clearInput=true></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
-      <ion-input type="password" clearInput=true></ion-input>
+      <ion-input [(ngModel)]="loginData.password" type="password" name="password" clearInput=true></ion-input>
     </ion-item>
     <button ion-button clear class="float-right">Forgot Password?</button>
-    <button ion-button block color="light" class="button-color">LOG IN</button>
+    <button type="submit" ion-button block color="light" class="button-color">LOG IN</button>
     <div class="other-login-label">Or, login with</div>
     <button ion-button block class="facebook-btn">Login with Facebook</button>
     <button ion-button color="danger" block>Login with Google</button>
+  </form>
   </ion-list>
 
 </ion-content>

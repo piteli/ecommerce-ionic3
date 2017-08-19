@@ -1,37 +1,38 @@
 
 <ion-content padding>
 <ion-list>
+  <form (submit)="doSignup()">
   <ion-item>
-    <ion-label stacked>Full Name</ion-label>
-    <ion-input type="text" placeholder="please enter full name" clearInput=true></ion-input>
+    <ion-label stacked>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="regData.username" name="username" placeholder="please enter username" clearInput=true></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label stacked>Email Address</ion-label>
-    <ion-input type="email" placeholder="please enter email address" clearInput=true></ion-input>
+    <ion-input type="email" [(ngModel)]="regData.email" name="email" placeholder="please enter email address" clearInput=true></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label stacked>Password</ion-label>
-    <ion-input type="password" placeholder="please enter password" clearInput=true></ion-input>
+    <ion-input type="password" [(ngModel)]="regData.password" name="password" placeholder="please enter password" clearInput=true></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label stacked>Re-enter Password</ion-label>
-    <ion-input type="password" placeholder="please enter password again" clearInput=true></ion-input>
+    <ion-input type="password" [(ngModel)]="regData.password2" name="password2" placeholder="please enter password again" clearInput=true></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>I want to receive exclusive offers and promotions by email</ion-label>
-    <ion-toggle [(ngModel)]="pepperoni" checked=true></ion-toggle>
+    <ion-toggle [(ngModel)]="regData.isNewsLetter" name="isNewsLetter" checked=true></ion-toggle>
   </ion-item>
-  <button ion-button block color="light" class="button-color">SIGN UP</button>
+  <button ion-button block color="light" type="submit" class="button-color">SIGN UP</button>
   <div class="other-register-label">I have read and understood Lazada's <span class="link-color"><u>Term of Usage</u></span>
   and <span class="link-color"><u>Privacy Policy</u></span>.</div>
 
   <div class="other-login-label">Or, login with</div>
   <button ion-button block class="facebook-btn">Login with Facebook</button>
   <button ion-button color="danger" block>Login with Google</button>
-
+</form>
 </ion-list>
 </ion-content>

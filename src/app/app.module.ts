@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SuperTabsModule } from 'ionic2-super-tabs';
-
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -19,7 +19,6 @@ import {BabyToysPage} from '../pages/home/child/baby-toys/baby-toys';
 import {SportTravelPage} from '../pages/home/child/sport-travel/sport-travel';
 import {MotorsPage} from '../pages/home/child/motors/motors';
 import {ShopByBrandsPage} from '../pages/home/child/shop-by-brands/shop-by-brands';
-import { SideMenuContentComponent } from '../pages/side-menu-content/side-menu-content.component';
 import { TabsPage } from '../pages/navigator/tabs/tabs';
 import { MenuPage } from '../pages/navigator/menu/menu';
 import { PopoverPage } from '../pages/components/popover/popover';
@@ -27,6 +26,7 @@ import { AuthService } from '../providers/auth-service/auth-service';
 import { AuthIndexPage } from '../pages/authentication/auth-index/auth-index';
 import { LoginPage } from '../pages/authentication/login/login';
 import { RegisterPage } from '../pages/authentication/register/register';
+import { NotificationsPage } from '../pages/notifications/notifications';
 
 @NgModule({
   declarations: [
@@ -43,19 +43,20 @@ import { RegisterPage } from '../pages/authentication/register/register';
     SportTravelPage,
     MotorsPage,
     ShopByBrandsPage,
-    SideMenuContentComponent,
     TabsPage,
     MenuPage,
     PopoverPage,
     AuthIndexPage,
     LoginPage,
     RegisterPage,
+    NotificationsPage,
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     SuperTabsModule.forRoot(),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -78,6 +79,7 @@ import { RegisterPage } from '../pages/authentication/register/register';
     AuthIndexPage,
     LoginPage,
     RegisterPage,
+    NotificationsPage,
   ],
   providers: [
     StatusBar,
