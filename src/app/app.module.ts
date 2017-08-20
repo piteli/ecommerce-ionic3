@@ -27,6 +27,7 @@ import { AuthIndexPage } from '../pages/authentication/auth-index/auth-index';
 import { LoginPage } from '../pages/authentication/login/login';
 import { RegisterPage } from '../pages/authentication/register/register';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { WishlistPage } from '../pages/wishlist/wishlist';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     LoginPage,
     RegisterPage,
     NotificationsPage,
+    WishlistPage,
 
   ],
   imports: [
@@ -80,6 +82,7 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     LoginPage,
     RegisterPage,
     NotificationsPage,
+    WishlistPage,
   ],
   providers: [
     StatusBar,

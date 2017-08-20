@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthIndexPage } from '../../authentication/auth-index/auth-index';
 import { ViewController } from 'ionic-angular';
 import { NotificationsPage } from '../../notifications/notifications';
+import { WishlistPage } from '../../wishlist/wishlist';
 
 /**
  * Generated class for the PopoverPage page.
@@ -33,6 +34,11 @@ export class PopoverPage {
 
   toNotiPage(){
     this.navCtrl.push(NotificationsPage);
+    this.viewCtrl.dismiss();
+  }
+
+  toWishPage(){
+    this.navCtrl.push(WishlistPage);
     this.viewCtrl.dismiss();
   }
 
