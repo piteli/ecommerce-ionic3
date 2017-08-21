@@ -4,6 +4,7 @@ import { AuthIndexPage } from '../../authentication/auth-index/auth-index';
 import { ViewController } from 'ionic-angular';
 import { NotificationsPage } from '../../notifications/notifications';
 import { WishlistPage } from '../../wishlist/wishlist';
+import { OrdersPage } from '../../orders/orders';
 
 /**
  * Generated class for the PopoverPage page.
@@ -39,6 +40,11 @@ export class PopoverPage {
 
   toWishPage(){
     this.navCtrl.push(WishlistPage);
+    this.viewCtrl.dismiss();
+  }
+
+  toOrdersPage(){
+    this.navCtrl.push(OrdersPage);
     this.viewCtrl.dismiss();
   }
 

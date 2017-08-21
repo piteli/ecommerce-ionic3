@@ -28,6 +28,7 @@ import { LoginPage } from '../pages/authentication/login/login';
 import { RegisterPage } from '../pages/authentication/register/register';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { WishlistPage } from '../pages/wishlist/wishlist';
+import { OrdersPage } from '../pages/orders/orders';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { WishlistPage } from '../pages/wishlist/wishlist';
     RegisterPage,
     NotificationsPage,
     WishlistPage,
+    OrdersPage,
 
   ],
   imports: [
@@ -83,6 +85,7 @@ import { WishlistPage } from '../pages/wishlist/wishlist';
     RegisterPage,
     NotificationsPage,
     WishlistPage,
+    OrdersPage,
   ],
   providers: [
     StatusBar,
