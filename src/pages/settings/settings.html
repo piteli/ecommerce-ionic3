@@ -7,12 +7,32 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>settings</ion-title>
+    <ion-title>Settings</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label>Notifications</ion-label>
+    <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-label>Sounds</ion-label>
+    <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+  </ion-item-divider>
+
+</ion-list>
+
+<ion-list-header>
+    <button ion-button item-start (click)="buttonClick()">Button</button>
+    List Header
+    <button ion-button outline item-end (click)="buttonClick()">Outline</button>
+  </ion-list-header>
 
 </ion-content>

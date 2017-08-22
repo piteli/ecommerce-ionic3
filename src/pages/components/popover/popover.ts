@@ -5,6 +5,8 @@ import { ViewController } from 'ionic-angular';
 import { NotificationsPage } from '../../notifications/notifications';
 import { WishlistPage } from '../../wishlist/wishlist';
 import { OrdersPage } from '../../orders/orders';
+import { SettingsPage } from '../../settings/settings';
+import { PolicyIndexPage } from '../../policies/policy-index/policy-index';
 
 /**
  * Generated class for the PopoverPage page.
@@ -45,6 +47,16 @@ export class PopoverPage {
 
   toOrdersPage(){
     this.navCtrl.push(OrdersPage);
+    this.viewCtrl.dismiss();
+  }
+
+  toSettingsPage(){
+    this.navCtrl.push(SettingsPage);
+    this.viewCtrl.dismiss();
+  }
+
+  toPolicyPage(){
+    this.navCtrl.push(PolicyIndexPage);
     this.viewCtrl.dismiss();
   }
 

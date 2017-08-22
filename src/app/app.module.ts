@@ -29,6 +29,11 @@ import { RegisterPage } from '../pages/authentication/register/register';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { WishlistPage } from '../pages/wishlist/wishlist';
 import { OrdersPage } from '../pages/orders/orders';
+import { SettingsPage } from '../pages/settings/settings';
+import { PolicyIndexPage } from '../pages/policies/policy-index/policy-index';
+import { PrivacyPolicyPage } from '../pages/policies/privacy-policy/privacy-policy';
+import { TermsConditionsPage } from '../pages/policies/terms-conditions/terms-conditions';
+
 
 @NgModule({
   declarations: [
@@ -54,6 +59,10 @@ import { OrdersPage } from '../pages/orders/orders';
     NotificationsPage,
     WishlistPage,
     OrdersPage,
+    SettingsPage,
+    PolicyIndexPage,
+    PrivacyPolicyPage,
+    TermsConditionsPage,
 
   ],
   imports: [
@@ -86,6 +95,10 @@ import { OrdersPage } from '../pages/orders/orders';
     NotificationsPage,
     WishlistPage,
     OrdersPage,
+    SettingsPage,
+    PolicyIndexPage,
+    PrivacyPolicyPage,
+    TermsConditionsPage,
   ],
   providers: [
     StatusBar,
